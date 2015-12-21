@@ -404,6 +404,6 @@ class ResolveUIDAndCaptionFilter(SGMLParser):
 
     def getResult(self):
         """Return the parsed result and flush it"""
-        result = "".join(self.pieces)
+        result = "".join([i.decode("utf-8") for i in self.pieces])
         self.pieces = None
-        return result
+        return result.encode("utf-8", "ignore")
