@@ -1,11 +1,15 @@
 Changelog
 =========
 
-1.15 (unreleased)
------------------
+1.14+enfold2 (unreleased)
+-------------------------
 
 - Workaround special unicode characters
   [frapell]
+
+
+1.14+enfold1 (2015-04-09)
+-------------------------
 
 - Strip trailing slashes from image src. This fixes images not getting resolved
   when inserted as original size by plone.app.widgets tinymce.
